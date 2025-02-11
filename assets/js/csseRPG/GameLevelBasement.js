@@ -17,14 +17,14 @@ class GameLevelDesert {
     const image_src_Basement = path + "/images/gamify/basement.png"; // be sure to include the path
     const image_data_Basement = {
         name: 'basement',
-        greeting: "Welcome to the basement. You need to get out of here as fast as you can .. you're starting to hallucinate."
+        greeting: "Welcome to the basement. You need to get out of here as fast as you can .. you're starting to hallucinate.",
         src: image_src_Basement,
         pixels: {height: 675, width: 1200}
     };
 
 
     // Player data for DeGen
-    const sprite_src_degen = path + "/images/gamify/degeen.png"; // be sure to include the path
+    const sprite_src_degen = path + "/images/gamify/degen.png"; // be sure to include the path
     const DEGEN_SCALE_FACTOR = 5;
     const sprite_data_degen = {
         id: 'DeGen',
@@ -34,7 +34,7 @@ class GameLevelDesert {
         STEP_FACTOR: 1000,
         ANIMATION_RATE: 50,
         INIT_POSITION: { x: 0, y: height - (height/DEGEN_SCALE_FACTOR) }, 
-        pixels: {height: 384, width: 512},
+        pixels: {height: 136, width: 102},
         orientation: {rows: 3, columns: 4 },
         down: {row: 0, start: 0, columns: 3 },
         left: {row: 2, start: 0, columns: 3 },
@@ -46,17 +46,17 @@ class GameLevelDesert {
 
 
     // NPC data for Hatsune Chan  
-    const sprite_src_hatsune = path + "/images/gamify/hatsune.png"; // be sure to include the path
+    const sprite_src_hatsune = path + "/images/gamify/miku.png"; // be sure to include the path
     const sprite_data_hatsune = {
         id: 'Hatsune Chan',
         greeting: "HI I'M HATSUNE CHAN UWU!! I'M SO HAPPY TO HAVE A NEW FRIEND DOWN HERE WITH US!! :3",
         src: sprite_src_hatsune,
         SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 50,
-        pixels: {height: 256, width: 352},
+        pixels: {height: 316, width: 189},
         INIT_POSITION: { x: (width / 2), y: (height / 2)},
-        orientation: {rows: 8, columns: 11 },
-        down: {row: 5, start: 0, columns: 3 },  // This is the stationary npc, down is default 
+        orientation: {rows: 3, columns: 4 },
+        down: {row: 0, start: 0, columns: 2 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
         // Hatsune Chan interaction 
         quiz: { 
@@ -86,10 +86,10 @@ class GameLevelDesert {
         src: sprite_src_asaka,
         SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 50,
-        pixels: {height: 301, width: 801},
+        pixels: {height: 316, width: 189},
         INIT_POSITION: { x: (width / 4), y: (height / 4)},
-        orientation: {rows: 1, columns: 4 },
-        down: {row: 0, start: 0, columns: 3 },  // This is the stationary npc, down is default 
+        orientation: {rows: 3, columns: 4 },
+        down: {row: 0, start: 0, columns: 2 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
         // GitHub command quiz 
         quiz: { 
@@ -117,10 +117,10 @@ class GameLevelDesert {
         src: sprite_src_mort,
         SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 100,
-        pixels: {height: 316, width: 627},
+        pixels: {height: 316, width: 189},
         INIT_POSITION: { x: (width * 3 / 4), y: (height * 3 / 4)},
-        orientation: {rows: 3, columns: 6 },
-        down: {row: 1, start: 0, columns: 6 },  // This is the stationary npc, down is default 
+        orientation: {rows: 3, columns: 4 },
+        down: {row: 0, start: 0, columns: 2 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
         // Linux command quiz
         quiz: { 
